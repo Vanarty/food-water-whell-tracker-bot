@@ -2,38 +2,41 @@
 
 ## Демонстрация функциональности бота
 
-### Скриншот 1
+### Deploy на render.com
 ![Screenshot](img/2026-01-11_15-07-47.png)
 
-### Скриншот 2
+### /start
 ![Screenshot](img/2026-01-11_15-08-30.png)
 
-### Скриншот 3
+### /set_profile
 ![Screenshot](img/2026-01-11_15-09-38.png)
 
-### Скриншот 4
+### результат заполнения профиля через /set_profile
 ![Screenshot](img/2026-01-11_15-09-57.png)
 
-### Скриншот 5
+### реузльтаты логирования на render.com
 ![Screenshot](img/2026-01-11_15-11-30.png)
 
-### Скриншот 6
+### /log_water
 ![Screenshot](img/2026-01-11_15-12-09.png)
 
-### Скриншот 7
+### /log_food
 ![Screenshot](img/2026-01-11_15-12-49.png)
 
-### Скриншот 8
+### /log_workout
 ![Screenshot](img/2026-01-11_15-13-42.png)
 
-### Скриншот 9
+### /log_workout
 ![Screenshot](img/2026-01-11_15-13-50.png)
 
-### Скриншот 10
+### /check_progres
 ![Screenshot](img/2026-01-11_15-14-11.png)
 
-### Скриншот 11
+### графики /show_cahrts (дополнительно)
 ![Screenshot](img/2026-01-11_15-14-40.png)
 
-### Скриншот 12
+### рекомендации /recommendations (дополнительно)
 ![Screenshot](img/2026-01-11_15-14-51.png)
+
+### пример логирования и работы при локальном деплое
+![Screenshot](img/2026-01-11_15-31-01.png)
