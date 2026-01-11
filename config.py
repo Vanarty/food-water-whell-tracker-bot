@@ -10,8 +10,8 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 # OpenWeatherMap API Key
 WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
 
-# Путь к базе данных
-DATABASE_PATH = os.getenv("DATABASE_PATH", "bot_database.db")
+# Используем /tmp для бесплатного плана Render
+DATABASE_PATH = os.getenv("DATABASE_PATH", "/tmp/bot_database.db")
 
 # Проверка наличия обязательных переменных
 if not BOT_TOKEN:
@@ -19,5 +19,3 @@ if not BOT_TOKEN:
 
 if not WEATHER_API_KEY:
     raise ValueError("WEATHER_API_KEY не установлен! Добавьте его в .env файл")
-
-
