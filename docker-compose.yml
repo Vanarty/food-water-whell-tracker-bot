@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: fitness-health-bot
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - WEATHER_API_KEY=${WEATHER_API_KEY}
+      - DATABASE_PATH=/app/data/bot_database.db
+    volumes:
+      # Сохраняем базу данных между перезапусками
+      - bot_data:/app/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  bot_data:
+
+

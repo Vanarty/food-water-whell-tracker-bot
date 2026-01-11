@@ -1,0 +1,15 @@
+notebooks/
+venv/
+.env
+.env.example
+.gitignore  
+README.md    
+LICENSE         
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+build/
+develop-eggs/

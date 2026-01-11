@@ -1,0 +1,23 @@
+# Конфигурация для деплоя на Render.com
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: worker
+    name: fitness-health-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    region: frankfurt
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: WEATHER_API_KEY
+        sync: false
+      - key: DATABASE_PATH
+        value: /app/data/bot_database.db
+    disk:
+      name: bot-data
+      mountPath: /app/data
+      sizeGB: 1
+
+
